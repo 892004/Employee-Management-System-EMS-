@@ -32,7 +32,7 @@ exports.loginEmployee = async(req , res)=>{
         const{email , password} = req.body;
 
         db.query(
-            "CALL login_employee(?,?)",
+            "CALL login_employee(?)",
             [email],
             async (err , result) => {
                 if(err) return res.status(500).json(err);

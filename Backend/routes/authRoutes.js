@@ -5,7 +5,7 @@ const {
     registerEmployee , loginEmployee
 } = require('../controller/authController');
 
-router.post("/api/register" ,  registerEmployee)
-router.post("/api/login" ,  loginEmployee)
+router.post("/register" ,  registerEmployee)
+router.post("/login" ,  loginEmployee)
 
 module.exports = router;
